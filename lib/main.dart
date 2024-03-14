@@ -11,6 +11,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -22,9 +23,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profile'),
+        title: const Text(
+          'Profile', style: TextStyle(color: Color(0xff86969E),)),
         backgroundColor: const Color(0xff1F2C34),
       ),
+      
       body: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10),
         child: Column(
@@ -34,8 +37,8 @@ class HomePage extends StatelessWidget {
               child: Column(
                 children: const [
                   CircleAvatar(
-                    backgroundImage: NetworkImage(
-                        'https://images.unsplash.com/photo-1633332755192-727a05c4013d'),
+                    backgroundImage: AssetImage('assets/images/Default_pfp.png'),
+                    backgroundColor: const Color(0xff86969E),
                     radius: 90,
                   ),
                 ],
@@ -54,7 +57,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        'Fauzan',
+                        'Alice Koh',
                         style: TextStyle(
                           color: Color(0xffffffff),
                           fontSize: 15,
@@ -70,7 +73,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 70, bottom: 8),
+                      padding: EdgeInsets.only(left: 52, bottom: 8),
                       child: Text(
                         'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
                         style: TextStyle(color: Color(0xff86969E)),
@@ -90,7 +93,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        'affzn_',
+                        'Life\'s a journey and I\'m having fun',
                         style: TextStyle(
                           color: Color(0xffffffff),
                           fontSize: 15,
@@ -119,7 +122,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        '+62 893-8989-0304',
+                        '+65 80132563',
                         style: TextStyle(
                           color: Color(0xffffffff),
                           fontSize: 15,
