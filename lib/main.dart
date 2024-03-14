@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        'Life\'s a journey and I\'m having fun',
+                        'Life\'s a party and I\'m having fun',
                         style: TextStyle(
                           color: Color(0xffffffff),
                           fontSize: 15,
